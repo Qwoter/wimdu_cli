@@ -1,0 +1,9 @@
+== README
+
+CLI project
+
+To run:
+* Make wimdu file executable
+* run as <tt>./wimdu [COMMAND]</tt>
+
+for help type <tt>./wimdu</tt>

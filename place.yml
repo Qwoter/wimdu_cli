@@ -1,0 +1,17 @@
+---
+places:
+- code: 3POXCZD9
+  title: |
+    Test
+  property_type: |
+    Some Type
+  address: |
+    blah-blah street 8
+  nightly_rate: |
+    14
+  max_guests: |
+    4
+  email: |
+    example@ex.da
+  phone_number: |
+    41241241

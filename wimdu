@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+$LOAD_PATH << '.'
+require "thor"
+require "lib/place"
+
+class WimduCli < Thor
+  desc "list", "list full places"
+  def list
+    Place.list
+  end
+
+  desc "list_all", "list all places"
+  def list_all
+    Place.list(true)
+  end
+
+  desc "new", "create new place"
+  def new
+    place = Place.new
+    # place.continue
+  end
+
+  desc "show [CODE]", "show place details"
+  def show(code)
+    place = Place.find(code)
+    place.show
+  end
+
+  desc "TODO:edit [CODE]", "edit place details"
+  def edit(code)
+    place = Place.find(code)
+    place.edit
+  end
+
+  desc "delete [CODE]", "delete place details"
+  def delete(code)
+    Place.delete(code)
+  end
+
+  desc "continue [CODE]", "continue creation of place"
+  def continue(code)
+    place = Place.find(code)
+    place.continue
+  end
+end
+
+WimduCli.start(ARGV)
