@@ -3,6 +3,7 @@
 CLI project
 
 To run:
+* <tt>bundle install</tt>
 * Make wimdu file executable
 * run as <tt>./wimdu [COMMAND]</tt>
 
